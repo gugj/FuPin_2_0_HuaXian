@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/top_title_strues"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/activity_title_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="村负责人"/>
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:id="@+id/tv_cunfuzeren_name"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="村负责人电话"/>
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:layout_marginRight="5dp"
+                              android:textSize="12dp"
+                              android:inputType="number"
+                              android:id="@+id/tv_cunfuzeren_phone"
+                              android:background="@drawable/edit_bg"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="第一书记"/>
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:id="@+id/tv_diyishuji_name"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="第一书记电话"/>
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:layout_marginRight="5dp"
+                              android:textSize="12dp"
+                              android:inputType="number"
+                              android:id="@+id/tv_diyishuji_phone"
+                              android:background="@drawable/edit_bg"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="包村干部"/>
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:id="@+id/tv_baocunganbu_name"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="包村干部电话"/>
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:layout_marginRight="5dp"
+                              android:textSize="12dp"
+                              android:inputType="number"
+                              android:id="@+id/tv_baocunganbu_phone"
+                              android:background="@drawable/edit_bg"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/btn_quxiao"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:text="取消"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/btn_quding"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:text="确定"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':fupin_2_0_huaxian', ':hellochartlibary', ':gridview_master_listview', ':library', ':my_library_baidumap'

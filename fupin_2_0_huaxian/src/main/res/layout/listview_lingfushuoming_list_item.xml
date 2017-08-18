@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/tv_name"
+            style="@style/text_style"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:layout_marginRight="100dp"
+            android:text="确定预购买机型。在正式购买之前会通过网站、卖场等渠道了解关于笔记本的具体配置和设计，确定几款适合自己的具体型号男生以配置的影响为主、女生以设计外观影响为主。在决定过程中会参考预选笔记本的品牌从购买结果中看到的是以中端的为主（如联想、惠普、华硕、dell、宏基、三星、东芝而在这些品牌中并没有很突出的对某一品牌大家有一致性的好评或者差评），设计到一个大众对该品牌的认知和评价及笔记本的质量，同时会关注的是这几款笔记本的价格那个更适合自己（4300元---5600元居多）。最终确定预购买的的"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin"
+        android:layout_margin="@dimen/margin_10" >
+
+        <TextView
+            android:id="@id/tv_sex"
+            style="@style/text_style"
+            android:textColor="@color/gray_878787"
+            android:textSize="@dimen/textSize_13"
+            android:text="张三"/>
+
+        <TextView
+            android:id="@id/tv_age"
+            style="@style/text_style"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/gray_878787"
+            android:textSize="@dimen/textSize_13"
+            android:text="创建时间：2017-05-21"/>
+
+        <TextView
+            android:id="@id/tv_xl"
+            style="@style/text_style"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/gray_878787"
+            android:textSize="@dimen/textSize_13"
+            android:text="修改时间：2017-6-23"/>
+
+        <TextView
+            android:id="@id/tv_card_num"
+            style="@style/text_style"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/gray_878787"
+            android:textSize="@dimen/textSize_13"
+           />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/hello_world"
+        android:src="@drawable/jinru" />
+
+</RelativeLayout>

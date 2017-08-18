@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/top_title_strues"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/activity_title_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="姓名"/>
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:id="@+id/tv_house_name"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="电话"/>
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:layout_marginRight="5dp"
+                              android:textSize="12dp"
+                              android:id="@+id/tv_house_phone"
+                              android:background="@drawable/edit_bg"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="身份证号"/>
+                    <EditText android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_house_cardid"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="性别"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_sex"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="贫困户属性"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_house_pkhsx"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="致贫原因"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_house_tuopinqingkuang"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="有无在校生"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_house_zaixiaosheng"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="有无残疾人"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_house_canjiren"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="有无精神病"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_house_jingshenbing"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="有无智障人员"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_house_zhizhang"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="收入年份"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_shourunianfen"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="是否参加城乡居民医疗保险"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_house_cxjm_yiliao"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!-->-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!-->-->
+                    <!--<TextView android:layout_width="match_parent"-->
+                              <!--android:layout_height="wrap_content"-->
+                              <!--android:paddingTop="5dp"-->
+                              <!--android:paddingBottom="5dp"-->
+                              <!--android:paddingLeft="5dp"-->
+                              <!--android:textColor="@color/black"-->
+                              <!--android:text="有无参加城镇职工养老保险"/>-->
+                    <!--<TextView android:layout_width="match_parent"-->
+                              <!--android:layout_height="wrap_content"-->
+                              <!--android:padding="5dp"-->
+                              <!--android:textSize="12dp"-->
+                              <!--android:layout_marginRight="5dp"-->
+                              <!--android:background="@drawable/edit_bg"-->
+                              <!--android:id="@+id/tv_house_czzg_yl"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!-->-->
+                    <!--<TextView android:layout_width="match_parent"-->
+                              <!--android:layout_height="wrap_content"-->
+                              <!--android:paddingTop="5dp"-->
+                              <!--android:paddingBottom="5dp"-->
+                              <!--android:paddingLeft="5dp"-->
+                              <!--android:textColor="@color/black"-->
+                              <!--android:text="有无参加城乡居民养老保险"/>-->
+                    <!--<TextView android:layout_width="match_parent"-->
+                              <!--android:layout_height="wrap_content"-->
+                              <!--android:padding="5dp"-->
+                              <!--android:textSize="12dp"-->
+                              <!--android:layout_marginRight="5dp"-->
+                              <!--android:background="@drawable/edit_bg"-->
+                              <!--android:id="@+id/tv_house_cxjm_yanglao"-->
+                        <!--/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="是否参加大病保险"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_housen_dabing"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="有无照片"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_youwuzhaopian"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:paddingBottom="5dp"
+                              android:paddingLeft="5dp"
+                              android:textColor="@color/black"
+                              android:text="有无情况说明"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="5dp"
+                              android:textSize="12dp"
+                              android:layout_marginRight="5dp"
+                              android:background="@drawable/edit_bg"
+                              android:id="@+id/tv_youwu_qingkuangshuoming"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <!--<TextView android:layout_width="match_parent"-->
+                              <!--android:layout_height="wrap_content"-->
+                              <!--android:paddingTop="5dp"-->
+                              <!--android:paddingBottom="5dp"-->
+                              <!--android:paddingLeft="5dp"-->
+                              <!--android:textColor="@color/black"-->
+                              <!--android:text="性别"/>-->
+                    <!--<TextView android:layout_width="match_parent"-->
+                              <!--android:layout_height="wrap_content"-->
+                              <!--android:padding="5dp"-->
+                              <!--android:textSize="12dp"-->
+                              <!--android:layout_marginRight="5dp"-->
+                              <!--android:background="@drawable/edit_bg"-->
+                              <!--android:id="@+id/tv_sex"-->
+                        <!--/>  -->
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/btn_quxiao"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:text="取消"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/btn_quding"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:text="确定"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

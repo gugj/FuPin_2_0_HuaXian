@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <include layout="@layout/activity_title_toolbar" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_internet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_40"
+        android:background="@color/orange_f7cc79"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/text_style"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/review_fail"
+            android:drawablePadding="@dimen/padding_5"
+            android:text="@string/no_internet"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_13" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_15"
+            android:contentDescription="@string/hello_world"
+            android:src="@drawable/jinru" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.roch.fupin.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragment_helpingobject"
+        android:name="com.roch.fupin.HelpingObjectFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragment_helpingsubject"
+        android:name="com.roch.fupin.HelpingSubjectFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragment_notic"
+        android:name="com.roch.fupin.NoticFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragment_no_poor_project"
+        android:name="com.roch.fupin.NoPoorProjectFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragment_poor_people_statistic"
+        android:name="com.roch.fupin.StatisticFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+</LinearLayout>
